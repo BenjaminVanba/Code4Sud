@@ -12,15 +12,65 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             text: "Bonne réponse! Le tremblement de terre continue. Que fais-tu ensuite?",
             options: [
-                { text: "Reste sous le bureau", nextQuestion: null, image: "images/Q2-OP1.png" },
-                { text: "Essaye de sortir de la salle", nextQuestion: null, image: "images/Q2-OP2.png" }
+                { text: "Les secousses s’arrêtent, tu cours très vite vers la fenêtre.", nextQuestion: null, image: "images/Q1-OP2.png" },
+                { text: "Les secousses s’arrêtent et tu préfère être sûr que les tremblements ne continuent pas.", nextQuestion: 3, image: "images/Q1-OP1.png" }
             ]
         },
         {
             text: "Mauvaise réponse! Que fais-tu maintenant?",
             options: [
                 { text: "Se protéger sous un bureau", nextQuestion: 1, image: "images/Q3-OP1.png" },
-                { text: "Essaye de sortir de la salle", nextQuestion: null, image: "images/Q3-OP2.png" }
+                { text: "Essaye de sortir de la salle", nextQuestion: 4, image: "images/Q3-OP2.png" }
+            ]
+        },
+        {
+            text: "Les secousses s’arrêtent. Que fais-tu maintenant?",
+            options: [
+                { text: "Vérifier que les fenêtres et portes sont intactes", nextQuestion: 5, image: "images/Q1-OP2.png" },
+                { text: "Rester sous le bureau et attendre un peu", nextQuestion: 6, image: "images/Q4-OP2.png" }
+            ]
+        },
+        {
+            text: "Attention! Les secousses recommencent. Que fais-tu?",
+            options: [
+                { text: "Rester sous le bureau", nextQuestion: 7, image: "images/Q5-OP1.png" },
+                { text: "Essayer de sortir en courant", nextQuestion: 8, image: "images/Q5-OP2.png" }
+            ]
+        },
+        {
+            text: "Bien joué! Tu es resté à l’abri sous le bureau. Mais maintenant?",
+            options: [
+                { text: "Écouter les instructions de la maîtresse", nextQuestion: 9, image: "images/Q6-OP1.png" },
+                { text: "Essayer de sortir de la salle", nextQuestion: 8, image: "images/Q6-OP2.png" }
+            ]
+        },
+        {
+            text: "Tu écoutes les instructions de la maîtresse. Que fais-tu maintenant?",
+            options: [
+                { text: "Te rendre à un point de rassemblement en sécurité", nextQuestion: null, image: "images/Q7-OP1.png" },
+                { text: "Essayer de retourner dans ta classe", nextQuestion: null, image: "images/Q7-OP2.png" }
+            ]
+        },
+        {
+            text: "Mauvaise réponse! Essaye encore.",
+            options: [
+                { text: "Se protéger sous un bureau", nextQuestion: 7, image: "images/Q8-OP1.png" }
+            ]
+        },
+        // New question added
+        {
+            text: "Tu arrives au point de rassemblement en sécurité. Que fais-tu maintenant?",
+            options: [
+                { text: "Attendre l'arrivée des secours", nextQuestion: null, image: "images/Q9-OP1.png" },
+                { text: "Retourner à la maison", nextQuestion: 10, image: "images/Q9-OP2.png" }
+            ]
+        },
+        // Another new question added
+        {
+            text: "Tu es maintenant chez toi après le tremblement de terre. Que fais-tu?",
+            options: [
+                { text: "Vérifier si tout va bien à la maison", nextQuestion: null, image: "images/Q10-OP1.png" },
+                { text: "Rester calme et surveiller les nouvelles", nextQuestion: null, image: "images/Q10-OP2.png" }
             ]
         }
     ];
